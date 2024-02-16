@@ -1,4 +1,4 @@
-//09 - Crie um programa que recebe o ano de nascimento de uma pessoa e o ano atual, calcule e mostre
+//10 - Crie um programa que recebe o ano de nascimento de uma pessoa e o ano atual, calcule e mostre
 
 let anoAtual = parseInt(prompt("Digite o ano atual"))
 
