@@ -64,6 +64,34 @@
             <button id="botao_soma">Somar</button>
        </div>
     </form> -->
+
+    <button id="botao">Clique aqui para incrementar</button>
+    <p>Quantidade de cliques: <span id="contador">0</span></p>
+    <button id="decremento">Clique aqui para decrementar</button>
+
+    <script>
+
+        // exercicio 24 - contador
+        let clique = 0;
+
+        function contador() {
+            let botao = document.getElementById('botao');
+            let displayContador = document.getElementById('contador');
+            let decremento = document.getElementById('decremento')
+
+            botao.addEventListener('click', () => {
+                clique++;
+                displayContador.textContent = clique;
+            });
+
+            decremento.addEventListener('click', () => {
+                clique--;
+                displayContador.textContent = clique;
+            })
+        }
+
+        contador();
+    </script>
     <!-- <script src="ex01.jsa"></script>
     <script src="ex02.jsa"></script>
     <script src="ex03.js"></script>
@@ -85,6 +113,7 @@
     <!-- <script src="ex19.js"></script> -->
     <!-- <script src="ex20.js"></script> -->
     <!-- <script src="ex21.js"></script> -->
-     <script src="ex22.js"></script>
+    <!-- <script src="ex22.js"></script> -->
+    <!-- <script src="ex23.js"></script> -->
 </body>
 </html>
